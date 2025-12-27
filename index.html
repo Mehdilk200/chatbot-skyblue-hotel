@@ -3,265 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stayava - Exhale Now, Check In</title>
+    <title>Stayava - Luxury Hotel Experience</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <span>✚</span> Stayava
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#room">Room</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-right">
-            <span class="phone">☎ +212 6 9998880</span>
-            <a href="login.html" class="btn-secondary">Login</a>
-            <a href="signup.html" class="btn-primary">Sign Up</a>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Modern Navigation -->
+    <nav class="modern-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">⛱️</span>
+                <span class="brand-text">STAYAVA</span>
+            </div>
+            
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#rooms" class="nav-link"><i class="fas fa-bed"></i> Rooms</a></li>
+                    <li><a href="#facilities" class="nav-link"><i class="fas fa-swimming-pool"></i> Facilities</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="nav-contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+212 6 9998880</span>
+                </div>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn-login">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="signup.html" class="btn-signup">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="clouds">
-            <div class="cloud cloud1"></div>
-            <div class="cloud cloud2"></div>
+    <!-- Modern Hero Section -->
+    <section class="modern-hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-swimming-pool-at-a-luxury-hotel-41049-large.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="hero-content">
-            <h1>Exhale Now,<br>Check In.</h1>
-            <a href="#" class="btn-primary">Book your stay</a>
-            <div class="hero-villa">
-                <div class="palm"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hotel-picks" id="room">
-        <div class="section-header">
-            <h2>Our Hotel Picks</h2>
-            <p>At vestibulum placerat leo rutrum quis nibh pellentesque vestibulum. In massa, mi sed nunc massa ridicula lacus erit pulvat commodo.</p>
-        </div>
-        <div class="hotels-grid" id="hotelsGrid"></div>
-    </section>
-
-    <section class="experience">
-        <h2>More than just a room<br>It's an experience.</h2>
-        <div class="experience-villa"></div>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🏨</div>
-                <div class="feature-title">01 — Hospitality</div>
-                <div class="feature-desc">Warm hospitality from the moment you arrive</div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🛏️</div>
-                <div class="feature-title">02 — Rooms</div>
-                <div class="feature-desc">Stylish rooms designed and dedicated to total comfort</div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📍</div>
-                <div class="feature-title">04 — Location</div>
-                <div class="feature-desc">Great access & prime location close to everything you love</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="confidence" id="about">
-        <h2>Choose with Confidence</h2>
-        <div class="confidence-content">
-            <div class="confidence-image"></div>
-            <div class="confidence-list">
-                <div class="confidence-item">
-                    <div class="confidence-number">01</div>
-                    <div class="confidence-text">
-                        <h3>Find Your Future Home</h3>
-                        <p>We help you find a home by offering a smart real estate experience</p>
-                    </div>
-                </div>
-                <div class="confidence-item">
-                    <div class="confidence-number">02</div>
-                    <div class="confidence-text">
-                        <h3>Experienced Agent</h3>
-                        <p>Find a experienced agent who knows your market best</p>
-                    </div>
-                </div>
-                <div class="confidence-item">
-                    <div class="confidence-number">03</div>
-                    <div class="confidence-text">
-                        <h3>Buy Or Rent Home</h3>
-                        <p>Millions of houses and apartments in your favorite cities</p>
-                    </div>
-                </div>
-                <div class="confidence-item">
-                    <div class="confidence-number">04</div>
-                    <div class="confidence-text">
-                        <h3>List Your Own Property</h3>
-                        <p>Sign up now and sell or rent your own properties</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog-section" id="blog">
-        <div class="blog-header">
-            <div>
-                <h2>From Our Blog</h2>
-                <p>At vestibulum placerat leo rutrum quis nibh pellentesque</p>
-            </div>
-            <div class="blog-nav-arrows">
-                <div class="blog-arrow blog-arrow-left" id="blogPrev">‹</div>
-                <div class="blog-arrow blog-arrow-right" id="blogNext">›</div>
-            </div>
-        </div>
-        <div class="blog-grid" id="blogGrid"></div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <h2>Stuck or unsure? Got questions? We've got you.</h2>
-        <p class="faq-subtitle">From quick answers to in-depth guidance, we're committed to making sure your hotel confident.</p>
         
-        <div class="faq-list">
-            <div class="faq-item active">
-                <div class="faq-question">
-                    <span class="faq-number">01</span>
-                    <span>What time is check-in and check-out?</span>
-                    <span class="faq-icon">−</span>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>⭐ Luxury Experience</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-line-1">Exhale Now,</span>
+                <span class="hero-line-2">Check In.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Discover luxury redefined at Stayava - where every moment becomes a memory
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#" class="btn-book">
+                    <i class="fas fa-calendar-check"></i> Book Your Stay
+                </a>
+                <a href="#rooms" class="btn-explore">
+                    <i class="fas fa-eye"></i> Explore Rooms
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Guest Rating</span>
                 </div>
-                <div class="faq-answer">
-                    Check-in is available from 2:00 PM onwards, and check-out is by 12:00 noon. Need a little extra time? Let us know in advance — we'll do our best to accommodate early check-ins or late check-outs, depending on availability.
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Luxury Rooms</span>
                 </div>
             </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">02</span>
-                    <span>Is parking available at the hotel?</span>
-                    <span class="faq-icon">+</span>
+    <!-- Quick Booking Widget -->
+    <section class="booking-widget">
+        <div class="widget-container">
+            <div class="widget-title">
+                <i class="fas fa-search"></i>
+                <h3>Find Your Perfect Stay</h3>
+            </div>
+            
+            <div class="widget-form">
+                <div class="form-group">
+                    <label><i class="fas fa-calendar-alt"></i> Check-in</label>
+                    <input type="date" class="form-input">
                 </div>
-                <div class="faq-answer">
-                    Yes, we offer complimentary parking for all our guests. Valet parking services are also available upon request.
+                
+                <div class="form-group">
+                    <label><i class="fas fa-calendar-alt"></i> Check-out</label>
+                    <input type="date" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-user-friends"></i> Guests</label>
+                    <select class="form-input">
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4+ Guests</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label><i class="fas fa-bed"></i> Room Type</label>
+                    <select class="form-input">
+                        <option>All Rooms</option>
+                        <option>Deluxe Suite</option>
+                        <option>Executive Room</option>
+                        <option>Presidential Suite</option>
+                    </select>
+                </div>
+                
+                <button class="btn-check">
+                    <i class="fas fa-search"></i> Check Availability
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="rooms-section" id="rooms">
+        <div class="section-header">
+            <h2>Luxury Accommodations</h2>
+            <p>Choose from our curated selection of premium rooms and suites</p>
+        </div>
+        
+        <div class="rooms-grid">
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&auto=format&fit=crop" alt="Deluxe Room">
+                    <div class="room-price">$299<span>/night</span></div>
+                </div>
+                <div class="room-content">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with panoramic city views</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-tv"></i> Smart TV</span>
+                        <span><i class="fas fa-coffee"></i> Minibar</span>
+                    </div>
+                    <a href="#" class="room-book">Book Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">03</span>
-                    <span>Is breakfast included with the stay?</span>
-                    <span class="faq-icon">+</span>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&auto=format&fit=crop" alt="Executive Suite">
+                    <div class="room-price">$499<span>/night</span></div>
                 </div>
-                <div class="faq-answer">
-                    Breakfast options vary by room type and booking package. Please check your reservation details or contact us for more information.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">04</span>
-                    <span>What facilities do you offer for families or long-term stays?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    We offer family-friendly amenities including connecting rooms, children's activities, and special long-term stay rates with added services.
+                <div class="room-content">
+                    <h3>Executive Suite</h3>
+                    <p>Luxury suite with separate living area</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-spa"></i> Spa Access</span>
+                        <span><i class="fas fa-concierge-bell"></i> Butler Service</span>
+                        <span><i class="fas fa-wine-glass-alt"></i> Welcome Drink</span>
+                    </div>
+                    <a href="#" class="room-book">Book Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">05</span>
-                    <span>Do you allow pets?</span>
-                    <span class="faq-icon">+</span>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&auto=format&fit=crop" alt="Presidential Suite">
+                    <div class="room-price">$899<span>/night</span></div>
                 </div>
-                <div class="faq-answer">
-                    Yes, we are pet-friendly! Please inform us in advance so we can make the necessary arrangements. Additional fees may apply.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">06</span>
-                    <span>Do you offer airport transfers?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    Yes, we provide airport shuttle services for our guests. Please contact us to arrange your transfer in advance.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="faq-number">07</span>
-                    <span>Can I cancel or change my reservation?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    Cancellation and modification policies vary depending on your rate and booking conditions. Please refer to your confirmation email or contact our reservations team.
+                <div class="room-content">
+                    <h3>Presidential Suite</h3>
+                    <p>Ultimate luxury with private terrace</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-hot-tub"></i> Jacuzzi</span>
+                        <span><i class="fas fa-dumbbell"></i> Private Gym</span>
+                        <span><i class="fas fa-car"></i> Valet Parking</span>
+                    </div>
+                    <a href="#" class="room-book">Book Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-brand">
-            <h1>STAYAVA</h1>
+    <!-- Facilities Section -->
+    <section class="facilities-section" id="facilities">
+        <div class="section-header">
+            <h2>World-Class Facilities</h2>
+            <p>Experience unparalleled amenities during your stay</p>
         </div>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>MENU</h3>
-                <ul>
-                    <li><a href="#home">Product</a></li>
-                    <li><a href="#room">Expertise</a></li>
-                    <li><a href="#about">Insight</a></li>
-                    <li><a href="#contact">About us</a></li>
-                </ul>
+        
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-swimming-pool"></i>
+                </div>
+                <h3>Infinity Pool</h3>
+                <p>Stunning rooftop pool with city views</p>
             </div>
-            <div class="footer-section">
-                <h3>CONTACT</h3>
-                <p>3891 Ranchview Dr.<br>Richardson, California 62639</p>
+            
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>Luxury Spa</h3>
+                <p>Rejuvenating treatments & therapies</p>
             </div>
-            <div class="footer-section">
-                <h3>FOLLOW US</h3>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="LinkedIn">💼</a>
-                    <a href="#" aria-label="YouTube">📺</a>
+            
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Fitness Center</h3>
+                <p>State-of-the-art gym equipment</p>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Fine Dining</h3>
+                <p>Multiple restaurants & bars</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>Guest Experiences</h2>
+            <p>What our guests say about their stay</p>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Absolutely stunning hotel with exceptional service. Will definitely return!"</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah M.">
+                    <div>
+                        <h4>Sarah M.</h4>
+                        <span>Business Traveler</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The presidential suite exceeded all expectations. Pure luxury!"</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="James L.">
+                    <div>
+                        <h4>James L.</h4>
+                        <span>Honeymooner</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright © stayava 2025</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="brand-icon">⛱️</span>
+                <h2>STAYAVA</h2>
+                <p>Luxury Redefined</p>
+            </div>
+            
             <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms & condition</a>
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#rooms">Rooms & Suites</a>
+                    <a href="#facilities">Facilities</a>
+                    <a href="#about">About Us</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 3891 Ranchview Dr, California</p>
+                    <p><i class="fas fa-phone"></i> +212 6 9998880</p>
+                    <p><i class="fas fa-envelope"></i> info@stayava.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Stayava Luxury Hotels. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 
-    <div class="chatbot-toggle" id="chatbotToggle"></div>
-    <div class="chatbot-window" id="chatbotWindow">
-        <div class="chatbot-header">
-            <h3>🏨 Booking Assistant</h3>
-            <span class="chatbot-close" id="chatbotClose">×</span>
+    <!-- Chatbot -->
+    <div class="hotel-chatbot">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <div class="chatbot-avatar">
+                <i class="fas fa-concierge-bell"></i>
+            </div>
+            <span class="chatbot-label">Hotel Assistant</span>
         </div>
-        <div class="chatbot-messages" id="chatbotMessages"></div>
-        <div class="chatbot-input">
-            <input type="text" id="chatInput" placeholder="Type your message...">
-            <button id="sendBtn"></button>
+
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="header-info">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <div>
+                        <h3>Ava - Hotel Concierge</h3>
+                        <p class="status">🟢 Online - 24/7 Available</p>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot welcome">
+                    <div class="message-header">
+                        <strong>Ava:</strong> <span class="time">Just now</span>
+                    </div>
+                    <p>Welcome to Stayava! I'm Ava, your personal hotel assistant. How can I help you today? 😊</p>
+                    <div class="quick-replies">
+                        <button class="quick-btn" data-reply="Book a room">📅 Book a room</button>
+                        <button class="quick-btn" data-reply="Room prices">💰 Room prices</button>
+                        <button class="quick-btn" data-reply="Hotel facilities">🏊 Hotel facilities</button>
+                        <button class="quick-btn" data-reply="Contact hotel">📞 Contact hotel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your question about booking, facilities, etc...">
+                <button id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
         </div>
     </div>
+    
 
     <script src="app.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
