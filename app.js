@@ -1,7 +1,7 @@
 // Environment Configuration with Fallbacks
 const GEMINI_CONFIG = {
-    apiKey: process.env.GEMINI_API_KEY || 'AIzaSyB91CwvwJuFNdDQMjYSNgonxMcNdSZvxjA', // Fallback for development
-    apiUrl: process.env.GEMINI_API_URL || 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent'
+    apiKey: process.env.GEMINI_API_KEY 
+    apiUrl: process.env.GEMINI_API_URL 
 };
 
 // Environment Detection
@@ -12,8 +12,8 @@ const ENV = {
 
 // Security Notice (Development only)
 if (ENV.isDevelopment && ENV.debug) {
-    console.log('🔧 Development Mode: Using environment variables for API configuration');
-    console.log('⚠️  Warning: API key is hardcoded for development. Move to production environment for security.');
+    console.log('Development Mode: Using environment variables for API configuration');
+    console.log(' Warning: API key is hardcoded for development. Move to production environment for security.');
 }
 
         // ========== Blog Data ==========
@@ -121,7 +121,7 @@ if (ENV.isDevelopment && ENV.debug) {
                 const hasApiUrl = this.apiUrl && this.apiUrl.includes('googleapis.com');
                 
                 if (!hasApiKey) {
-                    console.warn('⚠️ Gemini API key not configured properly');
+                    console.warn(' API key not configured properly');
                 }
                 
                 return hasApiKey && hasApiUrl;
@@ -129,7 +129,7 @@ if (ENV.isDevelopment && ENV.debug) {
 
             async generateResponse(prompt) {
                 if (!this.isConfigured) {
-                    console.warn('⚠️ Gemini API not configured properly. Using fallback responses.');
+                    console.warn('API not configured properly. Using fallback responses.');
                     return this.getFallbackResponse(prompt);
                 }
 
@@ -146,7 +146,7 @@ if (ENV.isDevelopment && ENV.debug) {
                                 }]
                             }],
                             generationConfig: {
-                                temperature: 0.7,
+                                temperature: 0.2,
                                 topK: 40,
                                 topP: 0.95,
                                 maxOutputTokens: 1024,
@@ -155,7 +155,7 @@ if (ENV.isDevelopment && ENV.debug) {
                     });
 
                     if (!response.ok) {
-                        throw new Error(`Gemini API Error: ${response.status}`);
+                        throw new Error(` API Error: ${response.status}`);
                     }
 
                     const data = await response.json();
@@ -167,7 +167,7 @@ if (ENV.isDevelopment && ENV.debug) {
                     return this.getFallbackResponse(prompt);
                     
                 } catch (error) {
-                    console.error('Gemini API Error:', error);
+                    console.error('API Error:', error);
                     return this.getFallbackResponse(prompt);
                 }
             }
@@ -655,8 +655,8 @@ Réponds maintenant en tant qu'assistant (maximum 4 phrases) :`;
                 }
             });
 
-            console.log('🏨 Stayava Hotel Booking System Initialized');
-            console.log('🤖 Chatbot powered by Gemini AI');
-            console.log('✨ ' + app.hotels.length + ' luxury hotels available');
-            console.log('📱 Fully responsive design');
+            console.log(' Stayava Hotel Booking System Initialized');
+            console.log(' Chatbot powered by Gemini AI');
+            console.log(' ' + app.hotels.length + ' luxury hotels available');
+            console.log(' Fully responsive design');
         });
