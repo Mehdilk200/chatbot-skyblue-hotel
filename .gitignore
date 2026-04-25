@@ -54,5 +54,4 @@ src/UI/
 src/uploads
 node_modules
 .pytest_cache
-docker
 venv-base
