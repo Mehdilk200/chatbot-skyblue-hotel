@@ -1,31 +1,31 @@
-# 🏨 Stayava - SkyBlue Hotel Operations & Booking Platform
+# Stayava - SkyBlue Hotel Operations & Booking Platform
 
 Stayava is a cutting-edge, full-stack hotel management and booking platform. It features an **AI-powered Chatbot Assistant** built with **LangGraph** and **Gemini**, designed to handle guest inquiries, manage reservations, and streamline hotel operations.
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🤖 AI-Powered Chatbot Assistant
+### AI-Powered Chatbot Assistant
 - **Intelligent Orchestration**: Built using **LangGraph** for stateful multi-turn conversations.
 - **RAG (Retrieval-Augmented Generation)**: Uses **ChromaDB** to provide accurate information about hotel services and policies.
 - **Smart Booking**: Handles reservation inquiries and processes bookings through conversational AI.
 - **Service Integration**: Can search for rooms, services, and handle guest complaints.
 
-### 🏢 Backend (FastAPI)
+### Backend (FastAPI)
 - **Asynchronous Operations**: High-performance API built with **FastAPI**.
 - **Database**: Uses **MongoDB** (via Motor) for flexible data storage (Rooms, Users, Reservations, Complaints).
 - **Authentication**: Secure **JWT-based** authentication system.
 - **Admin Dashboard**: Comprehensive API endpoints for managing hotel inventory and guest requests.
 
-### 💻 Frontend (React + Vite)
+### Frontend (React + Vite)
 - **Modern UI**: Built with **React 19** and **Vite** for a fast, responsive experience.
 - **Navigation**: Uses **React Router 7** for seamless transitions.
 - **Aesthetics**: Premium design with **Lucide React** icons and smooth animations.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -37,7 +37,7 @@ Stayava is a cutting-edge, full-stack hotel management and booking platform. It 
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```bash
 ├── src/
@@ -56,7 +56,7 @@ Stayava is a cutting-edge, full-stack hotel management and booking platform. It 
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the repository
 ```bash
@@ -106,11 +106,11 @@ The frontend will be available at `http://localhost:5173`.
 
 ---
 
-## 🧪 Testing
+## Testing
 Run the backend tests using pytest:
 ```bash
 pytest
 ```
 
-## 📝 License
+## License
 This project is private and intended for SkyBlue Hotel operations.
