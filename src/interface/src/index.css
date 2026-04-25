@@ -1,0 +1,6 @@
+@import "./styles/styles.css";
+
+/* Overrides for React environment */
+#root {
+  width: 100%;
+}
