@@ -48,10 +48,10 @@ uploads/
 
 
 chroma_db
-/src/.env
-/src/node_modules
-/src/UI
-/src/uploads
+src/.env
+src/node_modules
+src/UI/
+src/uploads
 node_modules
 .pytest_cache
 docker
